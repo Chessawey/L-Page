@@ -1,6 +1,8 @@
 html {
   font-size: 62.5%;
   overflow-x: hidden;
+  scroll-behavior: smooth;
+
 }
 
 body {
@@ -49,6 +51,18 @@ body {
 .btn--full:active {
   background-color: #d4a373;
   box-shadow: inset 0 0 0 3px #fff;
+}
+
+.btn--form {
+  background-color: #774936;
+  color: #fdf2e9;
+  align-self: end;
+  padding: 1.2rem;
+}
+
+.btn--form:hover {
+  background-color: #fdf2e9;
+  color: #555;
 }
 
 .margin {
@@ -104,8 +118,6 @@ body {
   display: grid;
   column-gap: 6.4rem;
   gap: 9.6rem;
-
-  /* margin-bottom: 9.6rem; */
 }
 
 .grid--2-cols {

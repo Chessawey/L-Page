@@ -10,6 +10,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600&display=swap" rel="stylesheet">
 
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="stylesheet" href="css/general.css" />
   <link rel="stylesheet" href="css/queries.css" />
@@ -20,19 +25,18 @@
 </head>
 
 <body>
-  <header class="header sticky">
+  <header class="header">
 
     <a href="#">
       <img class="logo" alt="Justbaked logo" src="assets/jusbaked-logo.png" />
     </a>
-    <!-- height="400px" width="400px" -->
 
     <nav class="main-nav">
       <ul class="main-nav-list">
         <li><a class="main-nav-link" href="#how">How it works</a></li>
         <li><a class="main-nav-link" href="#products">Products</a></li>
         <li><a class="main-nav-link" href="#testimonials">Testimonials</a></li>
-        <li><a class="main-nav-link nav-cta" href="#signup">Order now</a></li>
+        <li><a class="main-nav-link nav-cta" href="#cta">Order now</a></li>
       </ul>
     </nav>
 
@@ -57,7 +61,7 @@
       </div>
     </section>
 
-    <section class="section-how">
+    <section class="section-how" id="how">
       <div class="container">
         <span class="subheading">How it works</span>
         <h2 class="heading-secondary">Satisfy your cravings in 3 simple steps:</h2>
@@ -95,7 +99,7 @@
 
 
 
-    <section class="section-products">
+    <section class="section-products" id="products">
       <div class="container center-text">
         <span class="subheading products">PRODUCTS</span>
         <h2 class="heading-secondary">Just Baked serves fresh bread and pastries everyday</h2>
@@ -177,7 +181,7 @@
       </div>
     </section>
 
-    <section class="section-testimonials">
+    <section class="section-testimonials" id="testimonials">
 
       <div class="testimonials-container">
         <span id="testimonials" class="subheading">Testimonials</span>
@@ -233,56 +237,100 @@
           </div>
         </div>
       </div>
-
-
-
     </section>
 
 
+    <section class="section-cta" id="cta">
+      <div class="container">
+        <div class="cta">
+          <div class="cta-text-box">
+            <h2 class="heading-secondary">Sign up now and get a free cronuts!</h2>
+            <p class="cta-text">Mouthwatering delicious bread and pastries are waiting or you. Sign up now and get a
+              free pastry from us!</p>
+
+
+            <form class="cta-form" name="sign-up" action="thankyou.html" method="GET">
+              <div>
+                <label for="full-name">Full Name</label>
+                <input id="full-name" type="text" placeholder="Jessica Smith" name="full-name" required />
+              </div>
+
+              <div>
+                <label for="email">Email address</label>
+                <input id="email" type="email" placeholder="me@example.com" name="email" required />
+              </div>
+
+              <div>
+                <label for="select-where">Where did you hear from us?</label>
+                <select id="select-where" name="select-where" required>
+                  <option value="">Pease choose one option</option>
+                  <option value="friends">Friends and family</option>
+                  <option value="youtube">Youtube</option>
+                  <option value="twitter">Twitter</option>
+                  <option value="facebook">Facebook</option>
+                  <option value="instagram">Instagram</option>
+                  <option value="others">Others</option>
+                </select>
+              </div>
+
+
+              <button class="btn btn--form">Sign up now</button>
+            </form>
+          </div>
+
+          <div class="cta-img-box" role="img" aria-label="just baked cookies"></div>
+        </div>
+      </div>
+    </section>
 
   </main>
 
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="logo-col"><a href="#" class="footer-logo">
+          <img class="f-logo" alt="Just baked logo" src="assets/jusbaked-logo.png" />
+        </a>
+        <div class="follow-container">
+          <p class="follow">FOLLOW US</p>
+          <ul class="social-links">
+            <li><a class="footer-link" href="#">
+                <ion-icon class="social-icon" name="logo-instagram"></ion-icon>
+              </a></li>
+            <li><a class="footer-link" href="#">
+                <ion-icon class="social-icon" name="logo-facebook"></ion-icon>
+              </a></li>
+            <li><a class="footer-link" href="#">
+                <ion-icon class="social-icon" name="logo-twitter"></ion-icon>
+              </a></li>
+          </ul>
+        </div>
 
+        <div class="button-container">
+          <input class="button-input" id="email" type="email" placeholder="Your Email" name="email" />
+          <button class="button">Subscribe</button>
+        </div>
+      </div>
+
+      <div>
+        <p class="follow">VISIT US</p>
+        <address class="contacts">
+
+          <p class="address">143 Gallow St., 2nd Floor, Legazpi City, PH 4500</p>
+          <p>
+            <a class="footer-link" href="tel:415-201-6370">123-456-789</a><br />
+            <a class="footer-link" href="mailto:hello@omnifood.com">hello@justbaked.com</a>
+          </p>
+        </address>
+      </div>
+  </footer>
+  <div class="footerbottomline">
+    <p class="copyright">Copyright &copy; <span class="year">2027</span> by Just Baked, Inc. All rights reserved
+    </p>
+  </div>
+
+
+
+  <script src="index.js"></script>
 </body>
 
 </html>
-
-
-<!-- <div class="testimonials">
-  <figure class="testimonial">
-    <img class="testimonial-img" src="assets/customer1.png" alt="Photo of customer Dave Bryson">
-    <blockquote class="testimonial-text">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel reiciendis blanditiis reprehenderit officia
-      molestias natus, in minima ipsum illum amet nostrum quo odit, quasi provident, odio consequuntur
-      dignissimos eos dolore.
-    </blockquote>
-    <p class="testimonial-name">&mdash; Anna Welsh</p>
-  </figure>
-
-  <figure class="testimonial">
-    <img class="testimonial-img" src="assets/customer2.png" alt="Photo of customer Ben Hadley">
-    <blockquote class="testimonial-text">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius magnam veritatis voluptate ipsa obcaecati
-      explicabo quis aliquid! Pariatur, ipsam eius?
-      <p class="testimonial-name">&mdash; Ben Hadley</p>
-  </figure>
-
-  <figure class="testimonial">
-    <img class="testimonial-img" src="assets/customer3.png" alt="Photo of customer Steve Miller">
-    <blockquote class="testimonial-text">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, quo. Fugit sed sunt perferendis impedit
-      explicabo tenetur earum. Ratione accusamus culpa, ut expedita reprehenderit est quas magni illo. Fugit
-      asperiores facilis velit, nulla debitis culpa?
-    </blockquote>
-    <p class="testimonial-name">&mdash; Steve Miller</p>
-  </figure>
-
-  <figure class="testimonial">
-    <img class="testimonial-img" src="assets/customer4.png" alt="Photo of customer Hannah Smith">
-    <blockquote class="testimonial-text">
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat blanditiis repellat laudantium harum
-      nobis dolorem eos asperiores sint neque? Eligendi sit voluptas sapiente consequuntur. Quis.
-    </blockquote>
-    <p class="testimonial-name">&mdash; Hannah Smith</p>
-  </figure>
-</div> -->

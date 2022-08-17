@@ -25,7 +25,7 @@
 </head>
 
 <body>
-  <header class="header">
+  <header class="header sticky">
 
     <a href="#">
       <img class="logo" alt="Justbaked logo" src="assets/jusbaked-logo.png" />
@@ -40,6 +40,11 @@
       </ul>
     </nav>
 
+    <button class="btn-mobile-nav">
+      <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+      <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+    </button>
+
   </header>
 
   <main>
@@ -50,7 +55,7 @@
           <p class="hero-description">Experience mouthwatering taste of our freshly made products to satisfy
             your cravings.</p>
           <a href="#how" class="btn btn--outline">Learn more &darr;</a>
-          <a href="signup" class="btn btn--full margin">Try now</a>
+          <a href="cta" class="btn btn--full margin">Try now</a>
         </div>
 
         <div class="hero-img-box">
@@ -249,10 +254,10 @@
               free pastry from us!</p>
 
 
-            <form class="cta-form" name="sign-up" action="thankyou.html" method="GET">
+            <form class="cta-form" action="thankyou.html" method="GET">
               <div>
                 <label for="full-name">Full Name</label>
-                <input id="full-name" type="text" placeholder="Jessica Smith" name="full-name" required />
+                <input id="full-name" type="text" placeholder="Jessica Smith" name="name" required />
               </div>
 
               <div>
@@ -274,7 +279,7 @@
               </div>
 
 
-              <button class="btn btn--form">Sign up now</button>
+              <button class="btn btn--form" type="submit">Sign up now</button>
             </form>
           </div>
 
@@ -314,7 +319,6 @@
       <div>
         <p class="follow">VISIT US</p>
         <address class="contacts">
-
           <p class="address">143 Gallow St., 2nd Floor, Legazpi City, PH 4500</p>
           <p>
             <a class="footer-link" href="tel:415-201-6370">123-456-789</a><br />
@@ -329,8 +333,9 @@
   </div>
 
 
-
   <script src="index.js"></script>
 </body>
 
 </html>
+
+<!--  action="thankyou.html" method="GET" -->

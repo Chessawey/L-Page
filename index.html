@@ -13,16 +13,16 @@
 
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
+  <script src="script.js" defer></script>
 
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="stylesheet" href="css/general.css" />
   <link rel="stylesheet" href="css/queries.css" />
 
 
-
   <title>Just Baked &mdash; freshly baked</title>
 </head>
+
 
 <body>
   <header class="header sticky">
@@ -30,32 +30,42 @@
     <a href="#">
       <img class="logo" alt="Justbaked logo" src="assets/jusbaked-logo.png" />
     </a>
+    <div class="hamburger-menu">
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-btn" for="menu-toggle">
+        <span></span>
+      </label>
 
-    <nav class="main-nav">
-      <ul class="main-nav-list">
-        <li><a class="main-nav-link" href="#how">How it works</a></li>
-        <li><a class="main-nav-link" href="#products">Products</a></li>
-        <li><a class="main-nav-link" href="#testimonials">Testimonials</a></li>
-        <li><a class="main-nav-link nav-cta" href="#cta">Order now</a></li>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link" href="#how">How it works</a></li>
+          <li><a class="main-nav-link" href="#products">Products</a></li>
+          <li><a class="main-nav-link" href="#testimonials">Testimonials</a></li>
+          <li><a class="main-nav-link nav-cta" href="#cta">Order now</a></li>
+        </ul>
+      </nav>
+
+      <ul class="menu-box">
+        <li><a class="menu-item" href="#how">How it works</a></li>
+        <li><a class="menu-item" href="#products">Products</a></li>
+        <li><a class="menu-item" href="#testimonials">Testimonials</a></li>
+        <li><a class="menu-item" href="#cta">Order now</a></li>
       </ul>
-    </nav>
 
-    <button class="btn-mobile-nav">
-      <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
-      <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
-    </button>
+    </div>
+
 
   </header>
 
   <main>
-    <section class="section-hero">
+    <section class="section-hero" id="home">
       <div class="hero">
         <div class="hero-text-box">
           <h1 class="heading-primary">Freshly baked bread and pastries delivered wherever you are.</h1>
           <p class="hero-description">Experience mouthwatering taste of our freshly made products to satisfy
             your cravings.</p>
           <a href="#how" class="btn btn--outline">Learn more &darr;</a>
-          <a href="cta" class="btn btn--full margin">Try now</a>
+          <a href="#cta" class="btn btn--full">Try now</a>
         </div>
 
         <div class="hero-img-box">
@@ -107,7 +117,7 @@
     <section class="section-products" id="products">
       <div class="container center-text">
         <span class="subheading products">PRODUCTS</span>
-        <h2 class="heading-secondary">Just Baked serves fresh bread and pastries everyday</h2>
+        <h2 class="heading-product">Just Baked serves fresh bread and pastries everyday</h2>
       </div>
 
       <div class="gallery">
@@ -292,40 +302,42 @@
 
   <footer class="footer">
     <div class="footer-container">
-      <div class="logo-col"><a href="#" class="footer-logo">
+      <div class="logo-col">
+        <a href="#" class="footer-logo">
           <img class="f-logo" alt="Just baked logo" src="assets/jusbaked-logo.png" />
         </a>
-        <div class="follow-container">
-          <p class="follow">FOLLOW US</p>
-          <ul class="social-links">
-            <li><a class="footer-link" href="#">
-                <ion-icon class="social-icon" name="logo-instagram"></ion-icon>
-              </a></li>
-            <li><a class="footer-link" href="#">
-                <ion-icon class="social-icon" name="logo-facebook"></ion-icon>
-              </a></li>
-            <li><a class="footer-link" href="#">
-                <ion-icon class="social-icon" name="logo-twitter"></ion-icon>
-              </a></li>
-          </ul>
-        </div>
-
-        <div class="button-container">
-          <input class="button-input" id="email" type="email" placeholder="Your Email" name="email" />
-          <button class="button">Subscribe</button>
-        </div>
       </div>
+      <div class="follow-container">
+        <p class="follow">FOLLOW US</p>
+        <ul class="social-links">
+          <li><a class="footer-link" href="#">
+              <ion-icon class="social-icon" name="logo-instagram"></ion-icon>
+            </a></li>
+          <li><a class="footer-link" href="#">
+              <ion-icon class="social-icon" name="logo-facebook"></ion-icon>
+            </a></li>
+          <li><a class="footer-link" href="#">
+              <ion-icon class="social-icon" name="logo-twitter"></ion-icon>
+            </a></li>
+        </ul>
+      </div>
+
+
+      <div class="button-container">
+        <input class="button-input" id="email" type="email" placeholder="Your Email" name="email" />
+        <button class="button">Subscribe</button>
+      </div>
+
 
       <div>
         <p class="follow">VISIT US</p>
         <address class="contacts">
           <p class="address">143 Gallow St., 2nd Floor, Legazpi City, PH 4500</p>
-          <p>
-            <a class="footer-link" href="tel:415-201-6370">123-456-789</a><br />
-            <a class="footer-link" href="mailto:hello@omnifood.com">hello@justbaked.com</a>
-          </p>
+          <a class="footer-link" href="tel:415-201-6370">123-456-789</a>
+          <a class="footer-link" href="mailto:hello@omnifood.com">hello@justbaked.com</a>
         </address>
       </div>
+    </div>
   </footer>
   <div class="footerbottomline">
     <p class="copyright">Copyright &copy; <span class="year">2027</span> by Just Baked, Inc. All rights reserved

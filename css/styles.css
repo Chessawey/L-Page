@@ -15,7 +15,7 @@
 }
 
 .logo {
-  width: 75%;
+  width: 24.6rem;
 }
 
 .main-nav-list {
@@ -74,15 +74,15 @@
 }
 
 #menu-toggle:checked~.menu-box {
-  right: 0 !important;
+  right: 0;
 }
 
 .menu-btn {
   position: fixed;
   top: 5.5rem;
   right: 2rem;
-  width: 2.6rem;
-  height: 2.6rem;
+  width: 2.8rem;
+  height: 2.8rem;
   cursor: pointer;
   display: none;
   z-index: 1;
@@ -114,7 +114,7 @@
   position: fixed;
   top: 0;
   right: -100%;
-  width: 30rem;
+  width: 35rem;
   height: 100%;
   margin: 0;
   padding: 8rem 0;
@@ -130,15 +130,15 @@
   padding: 1.2rem 2.4rem;
   color: #6f4518;
   font-family: 'Figtree', sans-serif;
-  font-size: 2rem;
+  font-size: 2.8rem;
   font-weight: 600;
   text-decoration: none;
   transition-duration: .25s;
 }
 
 .menu-item:link,
-.menu-itema:visited {
-  /* color: #fff; */
+.menu-item:visited {
+  color: #6f4518;
 }
 
 .menu-item:hover,
@@ -214,8 +214,7 @@
   font-size: 7rem;
   font-weight: 500;
   color: #d4a373;
-  margin-bottom: 2.5rem;
-  /* margin-top: 4rem; */
+  margin-bottom: 3.5rem;
 }
 
 .menu-link {
@@ -237,9 +236,9 @@
 
 .image-container {
   display: flex;
-  width: 50%;
+  gap: 5rem;
+  margin-right: 8rem;
 }
-
 
 .step-img-box {
   display: flex;
@@ -247,34 +246,9 @@
   justify-content: center;
 }
 
-.step-img-box::before,
-.step-img-box::after {
-  content: "";
-  display: block;
-  width: 60%;
-  border-radius: 50%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.step-img-box::before {
-  width: 60%;
-  padding-bottom: 60%;
-  background-color: #fdf2e9;
-  z-index: -2;
-}
-
-.step-img-box::after {
-  width: 45%;
-  padding-bottom: 45%;
-  background-color: #f8d8bd;
-  z-index: -1;
-}
 
 .step-img {
-  width: 75%;
+  width: 25.6rem;
   border-radius: 20px;
   overflow: hidden;
   transition: all 0.4s;
@@ -338,7 +312,9 @@
 .testimonials-container {
   padding: 9.6rem;
   margin-left: 6rem;
+  margin-right: 6rem;
   margin-top: -7rem;
+
 }
 
 .testimonials {
@@ -465,7 +441,6 @@
   border-top: 1px solid #d4a373;
   border-bottom: 1px solid #d4a373;
   padding-bottom: 3rem;
-  /* margin-bottom: 5rem; */
 }
 
 .footer-container {

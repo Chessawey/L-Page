@@ -182,10 +182,11 @@
 
 .hero-description {
   font-size: 2.5rem;
-  line-height: 1.5;
+  line-height: 1.8;
   margin-bottom: 5rem;
   color: #fff;
 }
+
 
 .hero-img {
   width: 85%;
@@ -211,7 +212,7 @@
 }
 
 .step-number {
-  font-size: 7rem;
+  font-size: 6rem;
   font-weight: 500;
   color: #d4a373;
   margin-bottom: 3.5rem;
